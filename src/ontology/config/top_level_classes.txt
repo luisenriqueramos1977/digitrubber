@@ -1,0 +1,13 @@
+http://purl.obolibrary.org/obo/UBERON_0001062
+http://purl.obolibrary.org/obo/PATO_0000047
+http://purl.obolibrary.org/obo/NCBITaxon_131567
+http://purl.obolibrary.org/obo/HP_0012823
+http://purl.obolibrary.org/obo/MONDO_0021125
+http://purl.obolibrary.org/obo/MONDO_0000001
+http://purl.obolibrary.org/obo/NCIT_C16564
+http://purl.obolibrary.org/obo/MAXO_0000001
+https://w3id.org/cpont/omop/types/omop_datamodel_concept
+http://purl.obolibrary.org/obo/HP_0000118
+http://purl.obolibrary.org/obo/NCIT_C17049
+http://purl.obolibrary.org/obo/NCIT_C20993
+http://purl.obolibrary.org/obo/NCBITaxon_10239
