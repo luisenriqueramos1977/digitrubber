@@ -2,7 +2,7 @@ allow_equivalents: asserted-only
 catalog_file: catalog-v001.xml
 ci:
 - github_actions
-components: null
+ 
 contact: null
 contributors: null
 create_obo_metadata: true
@@ -15,7 +15,8 @@ custom_makefile_header: '
 
   '
 description: None
-documentation: null
+documentation:
+  documentation_system: mkdocs
 dosdp_tools_options: --obo-prefixes=true
 edit_format: owl
 exclude_tautologies: structural
@@ -25,7 +26,7 @@ export_formats:
 export_project_yaml: false
 git_main_branch: main
 git_user: ''
-github_org: luisenriqueramos1977
+github_org: cmungall
 gzip_main: false
 id: DIGIT-RUBBER
 import_group:
@@ -133,7 +134,6 @@ robot_report:
   release_reports: false
   report_on:
   - edit
-  use_base_iris: true
   use_labels: true
 robot_settings: null
 robot_version: null
@@ -145,5 +145,10 @@ uribase: http://purl.obolibrary.org/obo
 use_custom_import_module: false
 use_dosdps: false
 use_external_date: false
-workflows:
-- docs
+components:
+  products:
+    - filename: digitrubber_terms.owl
+      use_template: TRUE
+      template_options: --add-prefixes config/context.json 
+      templates:
+        - digitrubber_terms.tsv

@@ -46,7 +46,7 @@ TODAY ?=                    $(shell date +%Y-%m-%d)
 OBODATE ?=                  $(shell date +'%d:%m:%Y %H:%M')
 VERSION=                    $(TODAY)
 ANNOTATE_ONTOLOGY_VERSION = annotate -V $(ONTBASE)/releases/$(VERSION)/$@ --annotation owl:versionInfo $(VERSION)
-OTHER_SRC =                 
+OTHER_SRC =                 $(COMPONENTSDIR)/digitrubber_terms.owl 
 ONTOLOGYTERMS =             $(TMPDIR)/ontologyterms.txt
 
 FORMATS = $(sort  owl obo owl)
@@ -166,10 +166,10 @@ endif
 # ----------------------------------------
 
 $(REPORTDIR)/$(SRC)-obo-report.tsv: $(SRCMERGED) | $(REPORTDIR)
-	$(ROBOT) report -i $< $(REPORT_LABEL) $(REPORT_PROFILE_OPTS) --fail-on $(REPORT_FAIL_ON) --base-iri $(URIBASE)/DIGIT-RUBBER_ --base-iri $(URIBASE)/DIGIT-RUBBER --print 5 -o $@
+	$(ROBOT) report -i $< $(REPORT_LABEL) $(REPORT_PROFILE_OPTS) --fail-on $(REPORT_FAIL_ON) --print 5 -o $@
 
 $(REPORTDIR)/%-obo-report.tsv: % | $(REPORTDIR)
-	$(ROBOT) report -i $< $(REPORT_LABEL) $(REPORT_PROFILE_OPTS) --fail-on $(REPORT_FAIL_ON) --base-iri $(URIBASE)/DIGIT-RUBBER_ --base-iri $(URIBASE)/DIGIT-RUBBER --print 5 -o $@
+	$(ROBOT) report -i $< $(REPORT_LABEL) $(REPORT_PROFILE_OPTS) --fail-on $(REPORT_FAIL_ON) --print 5 -o $@
 
 # ----------------------------------------
 # Release assets
@@ -286,6 +286,30 @@ refresh-%:
 .PHONY: no-mirror-refresh-%
 no-mirror-refresh-%:
 	$(MAKE) IMP=true IMP_LARGE=true MIR=false PAT=false $(IMPORTDIR)/$*_import.owl -B
+
+
+# ----------------------------------------
+# Components
+# ----------------------------------------
+# Some ontologies contain external and internal components. A component is included in the ontology in its entirety.
+
+COMP=true # Global parameter to bypass component generation
+
+.PHONY: all_components
+all_components: $(OTHER_SRC)
+
+.PHONY: recreate-components
+recreate-components:
+	$(MAKE) IMP=true MIR=true PAT=true IMP_LARGE=true all_components -B
+
+.PHONY: recreate-%
+recreate-%:
+	$(MAKE) IMP=true IMP_LARGE=true MIR=true PAT=true $(COMPONENTSDIR)/$*.owl -B
+
+$(COMPONENTSDIR)/%: | $(COMPONENTSDIR)
+	touch $@
+.PRECIOUS: $(COMPONENTSDIR)/%
+
 
 # ----------------------------------------
 # Mirroring upstream ontologies
@@ -448,6 +472,8 @@ update_repo:
 	sh $(SCRIPTSDIR)/update_repo.sh
 	
 
+update_docs:
+	mkdocs gh-deploy --config-file ../../mkdocs.yaml
 
 # Note to future generations: prepending ./ is a safety measure to ensure that 
 # the environment does not malicously set `CLEANFILES` to `\`.
