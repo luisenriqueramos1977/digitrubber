@@ -38,7 +38,7 @@ Prefix(CPATH_CONDITION_OCCURRENCE:=<https://w3id.org/cpont/condition_occurrence/
 
 
 Ontology(<http://purl.obolibrary.org/obo/DIGIT-RUBBER/components/digitrubber_terms.owl>
-<http://purl.obolibrary.org/obo/DIGIT-RUBBER/releases/2022-11-03/components/digitrubber_terms.owl>
+<http://purl.obolibrary.org/obo/DIGIT-RUBBER/releases/2022-11-09/components/digitrubber_terms.owl>
 Annotation(rdfs:comment "This component is derived from the 'src/templates/digitrubber_terms.tsv', which is edited manually by domain experts."^^xsd:string)
 
 Declaration(Class(obo:BFO_0000015))
@@ -1397,7 +1397,7 @@ AnnotationAssertion(rdfs:label obo:DIGITRUBBER_000103 "factor [ncti]"@en)
 AnnotationAssertion(rdfs:label obo:DIGITRUBBER_000103 "faktor [ncti]"@de)
 SubClassOf(obo:DIGITRUBBER_000103 obo:IAO_0000030)
 
-# Class: obo:DIGITRUBBER_000104 (faktor [proco])
+# Class: obo:DIGITRUBBER_000104 (factor [proco])
 
 AnnotationAssertion(obo:IAO_0000115 obo:DIGITRUBBER_000104 "A data item that is a member of a minimal set of independent variables that can be used to model the dependent reponses in a set of related experiments."^^xsd:string)
 AnnotationAssertion(obo:IAO_0000119 obo:DIGITRUBBER_000104 "http://purl.obolibrary.org/obo/PROCO_0000005"^^xsd:string)
@@ -1941,7 +1941,7 @@ AnnotationAssertion(rdfs:label obo:DIGITRUBBER_000182 "plasticizer [hsh]"@en)
 AnnotationAssertion(rdfs:label obo:DIGITRUBBER_000182 "weichmacher [hsh]"@de)
 SubClassOf(obo:DIGITRUBBER_000182 obo:BFO_0000040)
 
-# Class: obo:DIGITRUBBER_000183 (weichmacher [ncti])
+# Class: obo:DIGITRUBBER_000183 (plasticizer [ncti])
 
 AnnotationAssertion(obo:IAO_0000115 obo:DIGITRUBBER_000183 "A substance added to plastics or other materials to make or keep them soft or pliable."^^xsd:string)
 AnnotationAssertion(obo:IAO_0000119 obo:DIGITRUBBER_000183 "http://purl.obolibrary.org/obo/NCIT_C55826"^^xsd:string)
@@ -1951,7 +1951,7 @@ AnnotationAssertion(rdfs:label obo:DIGITRUBBER_000183 "plasticizer [ncti]"@en)
 AnnotationAssertion(rdfs:label obo:DIGITRUBBER_000183 "weichmacher [ncti]"@de)
 SubClassOf(obo:DIGITRUBBER_000183 obo:BFO_0000040)
 
-# Class: obo:DIGITRUBBER_000184 (plasticizer [chebi])
+# Class: obo:DIGITRUBBER_000184 (weichmacher [chebi])
 
 AnnotationAssertion(obo:IAO_0000115 obo:DIGITRUBBER_000184 "Any compound that is used as an additive to increase the plasticity or fluidity of a substance, particularly but not exclusively to synthetic polymers."^^xsd:string)
 AnnotationAssertion(obo:IAO_0000119 obo:DIGITRUBBER_000184 "http://purl.obolibrary.org/obo/CHEBI_79056"^^xsd:string)
@@ -2856,7 +2856,7 @@ AnnotationAssertion(rdfs:label obo:DIGITRUBBER_000309 "Activator [dik]"@en)
 AnnotationAssertion(rdfs:label obo:DIGITRUBBER_000309 "Aktivator [dik]"@de)
 SubClassOf(obo:DIGITRUBBER_000309 obo:BFO_0000040)
 
-# Class: obo:DIGITRUBBER_000310 (Aktivator [ncit])
+# Class: obo:DIGITRUBBER_000310 (Activator [ncit])
 
 AnnotationAssertion(obo:IAO_0000115 obo:DIGITRUBBER_000310 "A class of substances that binds to, activates and increases the activity of a target."^^xsd:string)
 AnnotationAssertion(obo:IAO_0000119 obo:DIGITRUBBER_000310 "http://purl.obolibrary.org/obo/ncit.owl"^^xsd:string)
@@ -4532,7 +4532,7 @@ AnnotationAssertion(rdfs:label obo:DIGITRUBBER_000545 "Function [dik]"@en)
 AnnotationAssertion(rdfs:label obo:DIGITRUBBER_000545 "Funktion [dik]"@de)
 SubClassOf(obo:DIGITRUBBER_000545 obo:BFO_0000141)
 
-# Class: obo:DIGITRUBBER_000546 (Funktion [ncit])
+# Class: obo:DIGITRUBBER_000546 (Function [ncit])
 
 AnnotationAssertion(obo:IAO_0000115 obo:DIGITRUBBER_000546 "The normal action performed by a structure or device."^^xsd:string)
 AnnotationAssertion(obo:IAO_0000119 obo:DIGITRUBBER_000546 "http://purl.obolibrary.org/obo/ncit.owl"^^xsd:string)
