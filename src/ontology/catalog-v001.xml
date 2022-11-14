@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://www.semanticweb.org/luis/ontologies/2022/3/untitled-ontology-55" uri="digitrubber_basic_17_10v7.owl"/>
     <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/DIGIT-RUBBER/releases/2022-11-03/components/digitrubber_terms.owl" uri="components/digitrubber_terms.owl"/>
     <group id="Folder Repository, directory=, recursive=false, Auto-Update=false, version=2" prefer="public" xml:base="">
         <uri name="http://purl.obolibrary.org/obo/DIGIT-RUBBER/imports/po_import.owl" uri="imports/po_import.owl"/>
