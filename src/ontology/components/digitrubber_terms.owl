@@ -1941,7 +1941,7 @@ AnnotationAssertion(rdfs:label obo:DIGITRUBBER_000182 "plasticizer [hsh]"@en)
 AnnotationAssertion(rdfs:label obo:DIGITRUBBER_000182 "weichmacher [hsh]"@de)
 SubClassOf(obo:DIGITRUBBER_000182 obo:BFO_0000040)
 
-# Class: obo:DIGITRUBBER_000183 (weichmacher [ncti])
+# Class: obo:DIGITRUBBER_000183 (plasticizer [ncti])
 
 AnnotationAssertion(obo:IAO_0000115 obo:DIGITRUBBER_000183 "A substance added to plastics or other materials to make or keep them soft or pliable."^^xsd:string)
 AnnotationAssertion(obo:IAO_0000119 obo:DIGITRUBBER_000183 "http://purl.obolibrary.org/obo/NCIT_C55826"^^xsd:string)
@@ -1951,7 +1951,7 @@ AnnotationAssertion(rdfs:label obo:DIGITRUBBER_000183 "plasticizer [ncti]"@en)
 AnnotationAssertion(rdfs:label obo:DIGITRUBBER_000183 "weichmacher [ncti]"@de)
 SubClassOf(obo:DIGITRUBBER_000183 obo:BFO_0000040)
 
-# Class: obo:DIGITRUBBER_000184 (plasticizer [chebi])
+# Class: obo:DIGITRUBBER_000184 (weichmacher [chebi])
 
 AnnotationAssertion(obo:IAO_0000115 obo:DIGITRUBBER_000184 "Any compound that is used as an additive to increase the plasticity or fluidity of a substance, particularly but not exclusively to synthetic polymers."^^xsd:string)
 AnnotationAssertion(obo:IAO_0000119 obo:DIGITRUBBER_000184 "http://purl.obolibrary.org/obo/CHEBI_79056"^^xsd:string)
@@ -3313,7 +3313,7 @@ AnnotationAssertion(rdfs:label obo:DIGITRUBBER_000374 "Mastication [ncit]"@en)
 AnnotationAssertion(rdfs:label obo:DIGITRUBBER_000374 "Mastikation [ncit]"@de)
 SubClassOf(obo:DIGITRUBBER_000374 obo:BFO_0000015)
 
-# Class: obo:DIGITRUBBER_000375 (Mastication [hp])
+# Class: obo:DIGITRUBBER_000375 (Mastikation [hp])
 
 AnnotationAssertion(obo:IAO_0000115 obo:DIGITRUBBER_000375 "The process of biting and mashing food with the teeth prior to swallowing."^^xsd:string)
 AnnotationAssertion(obo:IAO_0000119 obo:DIGITRUBBER_000375 "http://purl.obolibrary.org/obo/hp.owl"^^xsd:string)
@@ -3608,7 +3608,7 @@ AnnotationAssertion(rdfs:label obo:DIGITRUBBER_000416 "Leistung [pato]"@de)
 AnnotationAssertion(rdfs:label obo:DIGITRUBBER_000416 "Power [pato]"@en)
 SubClassOf(obo:DIGITRUBBER_000416 obo:BFO_0000019)
 
-# Class: obo:DIGITRUBBER_000417 (Power [om])
+# Class: obo:DIGITRUBBER_000417 (Leistung [om])
 
 AnnotationAssertion(obo:IAO_0000115 obo:DIGITRUBBER_000417 "Power is the time rate at which work is done. It is a derived quantity in the International System of Units. Power is energy divided by time."^^xsd:string)
 AnnotationAssertion(obo:IAO_0000119 obo:DIGITRUBBER_000417 "http://www.ontology-of-units-of-measure.org/resource/om-2"^^xsd:string)
@@ -4532,7 +4532,7 @@ AnnotationAssertion(rdfs:label obo:DIGITRUBBER_000545 "Function [dik]"@en)
 AnnotationAssertion(rdfs:label obo:DIGITRUBBER_000545 "Funktion [dik]"@de)
 SubClassOf(obo:DIGITRUBBER_000545 obo:BFO_0000141)
 
-# Class: obo:DIGITRUBBER_000546 (Funktion [ncit])
+# Class: obo:DIGITRUBBER_000546 (Function [ncit])
 
 AnnotationAssertion(obo:IAO_0000115 obo:DIGITRUBBER_000546 "The normal action performed by a structure or device."^^xsd:string)
 AnnotationAssertion(obo:IAO_0000119 obo:DIGITRUBBER_000546 "http://purl.obolibrary.org/obo/ncit.owl"^^xsd:string)
